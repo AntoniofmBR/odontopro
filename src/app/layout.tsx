@@ -17,6 +17,16 @@ const getInter = Inter({
 export const metadata: Metadata = {
   title: "OdontoPRO",
   description: "Find the best professionals in a single local!",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+  openGraph: {
+    title: "OdontoPRO",
+    description: "Find the best professionals in a single local!",
+    images: [ `${ process.env.NEXT_PUBLIC_URL }/doctor-hero.png` ],
+  }
 };
 
 export default function RootLayout({
